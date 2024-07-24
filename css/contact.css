@@ -185,8 +185,6 @@ input {
     max-width: 600px;
     margin: 0 auto;
     padding: 10px;
-    border: 1px solid rgb(224,224,224);
     margin-top: 10px;
     border-radius: 10px;
-    background-color: rgb(224,224,224);
 }
