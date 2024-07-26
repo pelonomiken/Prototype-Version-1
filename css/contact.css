@@ -1,12 +1,12 @@
 :root {
     --color-background: rgb(224,224,224);
-    --color-text-white: #FFFFFF;
-    --color-placeholder: #C4C4C4;
+    --color-text-white: black;
+    --color-placeholder: black;
     --color-light-black: rgb(224,224,224);
-    --color-background-input-field: black;
-    --color-border-1: #383838;
+    --color-background-input-field: rgb(224,224,224);
+    --color-border-1: #c25ebb;
     --color-actions: #C8ACD6;
-    --color-border: #E5E8EB;
+    --color-border: #c25ebb;
 }
 
 body {
