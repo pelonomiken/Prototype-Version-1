@@ -1,12 +1,12 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: #141E41;
+  color: #000080;
   background-color: #f8f8f8;
   overflow-x: hidden;
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 90px 0px;
 }
 
 .layout_padding2-top {
@@ -101,7 +101,7 @@ a:focus {
 /*header section*/
 .hero_area {
   position: relative;
-  z-index: 1000;
+  z-index: 1001;
   background-color: #17153B;
   min-height: 100vh;
   display: -webkit-box;
@@ -112,6 +112,15 @@ a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
+.header_section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #17153B;
+}
+
 
 .sub_page .hero_area {
   min-height: auto;
@@ -923,7 +932,7 @@ a:focus {
   color: inherit;
 }
 
-/* Additional styling for Collaborations section */
+/* Additional styling for Collaborations section
 .collab-img {
   max-width: 100%;
   height: auto;
@@ -936,7 +945,8 @@ a:focus {
   justify-content: center;
   align-items: center;
   height: 100%;
-}
+} */
+
 
 /* Chat Button Styling */
 .chat-button {
@@ -959,6 +969,17 @@ a:focus {
 }
 .chat-button i {
   margin: 0;
+}
+
+.logo-img {
+  width: 80px; /* Adjust the width as needed */
+  height: auto; /* Maintains aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    width: 80px; /* Adjust for smaller screens if necessary */
+  }
 }
 
 
