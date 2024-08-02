@@ -922,12 +922,11 @@ a:focus {
   position: relative;
   background-color: #17153B;
   text-align: center;
-  margin-top: 25px;
 }
 
 .footer_section p {
   color: white;
-  padding: 10px 0;
+  padding: 5px 0;
   margin: 0;
   border-top: 2px solid black;
 }
