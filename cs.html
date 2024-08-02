@@ -15,7 +15,6 @@
 
   <title>Contact Us</title>
 
-
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
@@ -27,48 +26,77 @@
 
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-  <link href="css/contact.css" rel="stylesheet" />
+  <!-- style -->
+  <link href="css/style.css" rel="stylesheet" />
 
 </head>
 
 <body>
 
+  <!-- Under Maintenance Modal -->
+  <div id="maintenanceModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 style="color: red;"><b>Under Maintenance!</b></h2>
+      <p style="color: black;">This page is currently under maintenance. We apologize for any inconvenience.</p><br>
+      <p style="color: black;"><b>ALTERNATIVELY REACH US IN THESE <a href="index.html#footer" style="color: red;">CONTACT DETAILS.</b></p>
+    </div>
+  </div>
+
   <div style="text-align: center; padding: 20px; background-color: #17153B;">
     <p style="margin: 0; font-size: 20px; font-weight: 500px ; color: white; font-weight: 600;">Are you keen on knowing more and wanting our services? Get in touch with us!</p>
   </div>
 
-    <section style="background-color: white; padding: 50px 0; display: flex; justify-content: space-between; align-items: center;">
-      <form class="contact-container" style="flex: 1; margin-left: 250px;">
-        <button type="button" class="close-btn" onclick="window.location.href='index.html';">&times;</button>
-         <!--<h1 style="padding: 0px; color: black;">GET IN TOUCH</h1>-->
-          <div class="input-email">
-              <input type="text" class="first-name" name="fName" placeholder="Full Name">
-          </div>
-          <div class="input-email">
-              <input type="email" class="email" name="email" placeholder="Email">
-          </div>
-          <div class="input-service">
-              <select class="service" name="service" style="width: 460px;">
-                  <option value="" disabled selected>Service Interested In</option>
-                  <option value="option1" style="color: #c25ebb;">Web Development</option>
-                  <option value="option2" style="color: #c25ebb;">Software Development</option>
-                  <option value="option3" style="color: #c25ebb;">Business Strategy & Consultations</option>
-                  <option value="option4" style="color: #c25ebb;">UI/UX Design</option>
-              </select>
-          </div>
-          <div class="input-message">
-              <input type="text" class="message" name="message" placeholder="Enter Message Here">
-          </div>
-          <div class="action-btn">
-              <button type="submit" class="btn btn-submit" style="color: white;"><b>Submit</b></button>
-          </div>
-      </form>  
-      <div style="flex: 1; text-align: center;">
-        <img src="images/hand-drawn-people-talking-phone-illustration.png" alt="Graphic Image" style="width: 450px; height: auto;">
+  <section style="background-color: white; padding: 50px 0; display: flex; justify-content: space-between; align-items: center;">
+    <form class="contact-container" style="flex: 1; margin-left: 250px;">
+      <button type="button" class="close-btn" onclick="window.location.href='index.html';">&times;</button>
+      <!--<h1 style="padding: 0px; color: black;">GET IN TOUCH</h1>-->
+      <div class="input-email">
+        <input type="text" class="first-name" name="fName" placeholder="Full Name">
+      </div>
+      <div class="input-email">
+        <input type="email" class="email" name="email" placeholder="Email">
+      </div>
+      <div class="input-service">
+        <select class="service" name="service" style="width: 460px;">
+          <option value="" disabled selected>Service Interested In</option>
+          <option value="option1" style="color: #c25ebb;">Web Development</option>
+          <option value="option2" style="color: #c25ebb;">Software Development</option>
+          <option value="option3" style="color: #c25ebb;">Business Strategy & Consultations</option>
+          <option value="option4" style="color: #c25ebb;">UI/UX Design</option>
+        </select>
+      </div>
+      <div class="input-message">
+        <input type="text" class="message" name="message" placeholder="Enter Message Here">
+      </div>
+      <div class="action-btn">
+        <button type="submit" class="btn btn-submit" style="color: white;"><b>Submit</b></button>
+      </div>
+    </form>
+    <div style="flex: 1; text-align: center;">
+      <img src="images/hand-drawn-people-talking-phone-illustration.png" alt="Graphic Image" style="width: 450px; height: auto;">
     </div>
   </section>
+
+  <!-- JavaScript to open the modal -->
+  <script>
+    // Get the modal
+    var modal = document.getElementById("maintenanceModal");
+
+    // Open the modal when the page loads
+    window.onload = function () {
+      modal.style.display = "flex";
+    };
+
+    // Function to close the modal
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  </script>
+
 </body>
 
 </html>
+
 
 
