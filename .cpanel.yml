@@ -1,3 +1,7 @@
+#Line 1 is the beginning of a YAML file.
+#Lines 2 and 3 add the deployment and tasks keys, respectively.
+#Lines 4 through 6 specify an array of BASH commands to run during deployment. You can add as many commands to this array as you wish.
+
 ---
 deployment:
   tasks:
